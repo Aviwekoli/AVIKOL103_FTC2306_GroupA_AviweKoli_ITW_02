@@ -1,56 +1,100 @@
+*{
+    background-color: dimgray;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-width: 10px;
 
-body{
-    background-color:dimgray;
-    border-left: 15px;
-    border-right: 15px;
-    border-top: 15px;
-    border-bottom: 15px;
 }
-img{
-    object-position: center;
+
+/*Profile picture design*/
+.ProfilePhoto img{
     border-radius: 50%;
     border-style: outset;
     border-width: 5px;
     border-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
-header{
-    color: white;
-    font-style: gramond;
-   /* margin: 5px;
-    padding: 5px;*/
-
-}
-/*
+/*Navigation Bar*/
 .navigationBar{
     list-style-type: none;
     width: 200px;
     background-color: #474554;
-    margin:30px;
-    padding: 15px;
+    margin-left: 60px;
+    padding: 2px;
 }
-li a{
+.navigationBar a{
     display:block;
-    color: white;
+    color: black;
     padding: 8px 16px;
     text-decoration: none; 
 }
-li a:hover{
-    background-color: dimgray;
-    color: white;
+.navigationBar a:hover{
+    background-color:#5D411B;
+    color: black;
 }
-*/
+/*End of Navigation Bar*/
+
+/*Headings*/
+h2, h3{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-style: gramond;
+}
 h2{
+    background-color:#5D411B;
+    border-end-end-radius: 0%;
+    margin-right: 60 px;
+    padding: 5px;
+}
+
+/* Paragraphs */
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+    padding:10px;
+    border-radius: 0%;
+    margin-top: 15;
+    margin-bottom: 15px;
+    border-width: 0px;
+    background-color: darkslategrey;
+}
+/*Skills and jobs*/
+.jobs, .SkillsList{
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 10px;
+    width:fit-content;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-width: 0px;
+}
+
+li{
+    background-color: darkslategrey;
+    padding:  1px;
+    margin: 5px;
+    border-width: 5px;
+    border-color: darkslategrey;
+}
+
+/*links*/
+a{
+    color: #5D411B;
+    width:100 px;
+}
+#IntroToWeb a:hover{
     background-color: black;
-   /* margin: 25px;
-    padding: 10px;*/
 }
-section{
-    color: white;
-    /*margin:30px;
-    padding: 15px;*/
-}
-/*Contact Details Bar*/
-footer{
-    background-color: #474554;
+
+/*Contact Details Icons*/
+.phone, .email, .linkedIn, .gitHub img{
+    display: inline;
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 30px;
 }
