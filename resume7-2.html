@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aviwe's Resume.</title>
         <!--Link tag to link the favicon-->
@@ -18,28 +17,27 @@
                 BACK TO THE TOP
             </button>
         </a>
+        
+        <div class="heroImage">
+            <div class="heroText">
+                <!--Picture element for the profile picture-->
+                <picture>
+                    <source media="(max-width: 480px)" srcset="https://i.postimg.cc/VNqc5YZZ/profile-photo-small.jpg">
+                    <source media="(max-width: 960px)" srcset="https://i.postimg.cc/pLvbYjjP/profile-photo.jpg">
+                    <img class="ProfilePhoto" src="https://i.postimg.cc/pLvbYjjP/profile-photo.jpg" alt="Resume Profile photo">
+                </picture>
 
-        <!-- Adding aside tag to the image-->
-        <aside id="top">
-            <div class="ProfilePhoto">
-                <center>
-                    <img src="images/profile_photo.jpg" alt="Resume Profile photo" style="width:288px;height:288px;">
-                </center>
-            </div>
-        </aside>
-
-        <!-- Adding header to name and introductory statement-->
-        <header>
-            <center>
-                <div class="name">
+                <div class="namee">
                     <h1>Aviwe Koli</h1>
                     <p>An introductory personal statement.</p>
                     <br>
                 </div>
-            </center>
-        </header>
+            </div>
+        </div>
+        <!--End of banner or hero image-->
         
         <!-- Adding aside tag to the menu-->
+        <article>
         <aside>
             <center>
             <nav>
@@ -138,31 +136,34 @@
                 <button type="submit" class="button1">SEND</button>   
              </form>
              <!--END OF THE FORM-->
-             
-             <div class="email">
-                <a href="mailto:aviwekoli@gmail.com" class="fa fa-gmail" target="_blank">
-                <img src="images/email.png" alt="Email" style="width:30px;height:30px;">  
-                </a>
-             </div>
-             
-             <div class="phone">
-                <a href ="tel:076-147-3162"  target="_blank">
-                <img src="images/phone.jpg" alt="phone" style="width:30px;height:30px;">
-                </a>
+             <div class="social">
+                <div class="email">
+                    <a href="mailto:aviwekoli@gmail.com" class="fa fa-gmail" target="_blank">
+                    <img src="images/email.png" alt="Email" style="width:30px;height:30px;">  
+                    </a>
+                 </div>
+                 
+                 <div class="phone">
+                    <a href ="tel:076-147-3162"  target="_blank">
+                    <img src="images/phone.jpg" alt="phone" style="width:30px;height:30px;">
+                    </a>
+                 </div>
+    
+                 <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/aviwe-koli-373665278/" target="_blank">
+                    <img src="images/linkedIn.png" alt="LinkedIn" style="width:30px;height:30px;">
+                    </a>
+                 </div>
+    
+                 <div class="gitHub">
+                    <a href="https://github.com/Aviwekoli" target="_blank">
+                    <img src="images/GitHub.png" alt="gitHub" style="width:30px;height:30px;">
+                    </a>
+                 </div>
              </div>
 
-             <div class="linkedIn">
-                <a href="https://www.linkedin.com/in/aviwe-koli-373665278/" target="_blank">
-                <img src="images/linkedIn.png" alt="LinkedIn" style="width:30px;height:30px;">
-                </a>
-             </div>
-
-             <div class="gitHub">
-                <a href="https://github.com/Aviwekoli" target="_blank">
-                <img src="images/GitHub.png" alt="gitHub" style="width:30px;height:30px;">
-                </a>
-             </div>
         </center>
         </footer>
+        </article>
     </body>
 </html>

@@ -1,19 +1,48 @@
-*{
+article {
     background-color: dimgray;
     color:black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-width: 10px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
 
 }
 
+/* ---- Back to top button styles ---- */
+
+#back-to-top {
+    position:fixed;
+    bottom: 40px;
+    right: 40px;
+
+}
+#back-to-top > button{
+    background-color: black;
+    border-radius: 5px;
+    border: solid 1px darkcyan;
+    width: fit-content;
+    height:fit-content;
+    padding-top: 3Spx;
+}
+#back-to-top:hover > button {
+    border: solid 1px rgb(198, 156, 78);
+    background-color:#474554;
+    
+}
+#back-to-top > button {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 /*Profile picture design*/
-.ProfilePhoto img{
+.ProfilePhoto{
+    width: 25;
+    height: 25%;
     border-radius: 50%;
     border-style: outset;
     border-width: 5px;
     border-color: black;
-    margin: 0px;
-    padding: 0px;
+    margin: 30px;
 }
 
 /*Navigation Bar*/
@@ -22,7 +51,7 @@
     width: 200px;
     background-color: #474554;
     margin-left: 60px;
-    padding: 2px;
+    padding: 0px;
 }
 .navigationBar a{
     display:block;
@@ -91,6 +120,7 @@ a{
 
 /*Contact Details Icons*/
 .phone, .email, .linkedIn, .gitHub img{
+    display: inline;
     border-radius: 50%;
     margin-left: 30px;
     margin-top: 5px;
@@ -139,4 +169,23 @@ label{
 }
 .button1:hover{
     background-color:#5D411B;
+}
+
+/*Styling the hero image*/
+.heroImage {
+    background-image: url(../Images/heroo.jpg);
+    background-position: center;
+    background-repeat: initial;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: relative;
+    padding: 40px;
+    margin: 0px;
+    
+}
+.heroText {
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    padding: 0px;
 }
