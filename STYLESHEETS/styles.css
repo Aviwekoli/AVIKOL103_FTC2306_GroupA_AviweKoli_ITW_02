@@ -1,4 +1,4 @@
-article {
+ article{
     background-color: dimgray;
     color:black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -11,6 +11,7 @@ article {
 /* ---- Back to top button styles ---- */
 
 #back-to-top {
+    /* font-size: calc(15px + 0.390625vw); */
     position:fixed;
     bottom: 40px;
     right: 40px;
@@ -18,11 +19,12 @@ article {
 }
 #back-to-top > button{
     background-color: black;
+    /* font-size: calc(15px + 0.390625vw); */
     border-radius: 5px;
     border: solid 1px darkcyan;
     width: fit-content;
     height:fit-content;
-    padding-top: 3Spx;
+    padding: 20px;
 }
 #back-to-top:hover > button {
     border: solid 1px rgb(198, 156, 78);
@@ -33,36 +35,51 @@ article {
     text-decoration: none;
     color: whitesmoke;
 }
+#BTT{
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+}
+#BTT:hover{
+    opacity: 1;
+}
 
 /*Profile picture design*/
 .ProfilePhoto{
-    width: 25;
+    width: 25%;
     height: 25%;
     border-radius: 50%;
     border-style: outset;
-    border-width: 5px;
+    border-width: 100%;
     border-color: black;
-    margin: 30px;
+    margin: 2rem;
 }
 
 /*Navigation Bar*/
 .navigationBar{
-    list-style-type: none;
-    width: 200px;
-    background-color: #474554;
-    margin-left: 60px;
-    padding: 0px;
-}
-.navigationBar a{
-    display:block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none; 
-}
-.navigationBar a:hover{
     background-color:#5D411B;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding: 8px 16px;
+
+}
+.nav-link {
+text-decoration: none;
+color:white;
+margin: 0 4vw;
+
+}
+
+.nav-link :hover{
+    background-color:#474554;
+}
+.navigationBar :hover{
     color: black;
 }
+
 /*End of Navigation Bar*/
 
 /*Headings*/
@@ -83,12 +100,13 @@ h2{
 p{
     margin-left: 60px;
     margin-right: 60px;
-    padding:10px;
-    border-radius: 0%;
     margin-top: 15;
     margin-bottom: 15px;
-    border-width: 0px;
+    padding:10px;
+    border-radius: 10px;
     background-color: darkslategrey;
+    border-width: 10px;
+    border-color: #5D411B;
 }
 /*Skills and jobs*/
 .jobs, .SkillsList{
@@ -98,16 +116,17 @@ p{
     width:fit-content;
     margin-bottom: 10px;
     padding: 10px;
-    border-width: 0px;
+
 }
 
 li{
     background-color: darkslategrey;
-    padding:  1px;
+    padding: 3px;
     margin: 5px;
     border-width: 5px;
     border-color: darkslategrey;
-}
+    border-radius: 6px;
+} 
 
 /*links*/
 a{
@@ -120,25 +139,35 @@ a{
 
 /*Contact Details Icons*/
 .phone, .email, .linkedIn, .gitHub img{
+    /* font-size: calc(15px + 0.390625vw); */
     display: inline;
     border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-bottom: 15px;
     padding: 10px;
     width: 30px;
 }
 
 /*Form Styles*/
+.myForm{
+    /* font-size: calc(15px + 0.390625vw); */
+    width:fit-content;
+    height: fit-content;
+}
 form{
+    /* font-size: calc(15px + 0.390625vw); */
     background-color:#5D411B;
     width:fit-content;
-    height: auto;
+    height:fit-content;
     text-align: center;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 10px;
-    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+}
+#texxtarea{
+    width: 90%;
+    height:30%;
 }
 #contact_me{
     background-color: #5D411B;
@@ -160,6 +189,7 @@ label{
 
 .button1{
     border-radius: 10px;
+    margin: 5px;
     padding: 3px;
     border-width: 1px;
     background-color:#474554;
@@ -173,7 +203,7 @@ label{
 
 /*Styling the hero image*/
 .heroImage {
-    background-image: url(../Images/heroo.jpg);
+    background-image: url(../Images/declan-sun-j4ED0mgXp2c-unsplash.jpg);
     background-position: center;
     background-repeat: initial;
     background-size: cover;
@@ -184,8 +214,179 @@ label{
     
 }
 .heroText {
+    /* font-size: calc(15px + 0.390625vw); */
     position: relative;
     text-align: center;
     background-size: cover;
     padding: 0px;
+}
+/*---------------------Mobile Media Queries-------------------*/
+@media only screen and (max-width:480px) and (min-width: 0px){
+    article{
+        background-color: blue;
+
+    }
+
+    .ProfilePhoto{
+        margin: 0.2rem;
+    }
+    #BTT{
+        display: block;
+    }
+    h2, h3{
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        padding: 5px;
+    }
+    p{
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        padding: 5px;
+    }
+    .jobs, .SkillsList{
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        padding: 5px;
+    }
+    li{
+        background-color: darkslategrey;
+        padding: 0.2rem;
+        margin: 0.4rem;
+        border-radius: 2px;
+    }
+    .phone, .email, .linkedIn, .gitHub img{
+        display:block;
+        border-radius: 50%;
+        margin: 0.4rem;
+        padding: 10px;
+        width: 10px;
+    }
+    .navigationBar{
+        text-align: none;
+        z-index: 1;
+        padding: 2px 4px;
+    }
+    #back-to-top {
+        display: none;
+    }
+}
+
+/*---------------------Tablet Media Queries-------------------*/
+ @media only screen and (max-width: 769px) and (min-width: 481px){
+    article{
+        background-color:darkgray;
+    }
+    h2, h3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 10px;
+    }
+    p{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 10px;
+    }
+    .jobs, .SkillsList{
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+        padding: 10px;
+    }
+    .phone, .email, .linkedIn, .gitHub img{
+        display: inline;
+        border-radius: 50%;
+        margin: 1.4rem;
+        padding: 10px;
+        width: 10px;
+    }
+    .navigationBar{
+        text-align: none;
+        z-index: 1;
+        padding: 5px 10px;
+    }
+    #back-to-top {
+        display:block;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+    #back-to-top > button{
+        border-radius: 5px;
+        border: solid 1px darkcyan;
+        width: fit-content;
+        height:fit-content;
+        padding: 2px;
+    }
+}
+
+
+/*----------------------Laptop Media Queries-------------------*/
+@media only screen and (min-width: 770px) and (max-width: 1024px){
+    article{
+        background-color: black;
+        color: yellow;
+    }
+    h2, h3{
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        padding: 10px;
+    }
+    h2{
+        background-color: darkslategray;
+    }
+    p{
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+        padding: 10px;
+    }
+    .jobs, .SkillsList{
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+        padding: 10px;
+    }
+    .phone, .email, .linkedIn, .gitHub img{
+        display: inline;
+        border-radius: 50%;
+        margin: 1.8rem;
+        padding: 10px;
+        width: 10px;
+    }
+    .navigationBar{
+        text-align: none;
+        z-index: 1;
+        padding: 5px 10px;
+    }
+    #back-to-top {
+        display:block;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    #back-to-top > button{
+        border-radius: 5px;
+        border: solid 1px darkcyan;
+        width: fit-content;
+        height:fit-content;
+        padding: 4px;
+    }
+    form{
+        /* font-size: calc(15px + 0.390625vw); */
+        background-color: darkslategray;
+    }
+        #contact_me{
+            background-color: black;
+        }
+        
+        input, select, textarea{
+            background-color: black;
+            color: deepskyblue;
+        }
+    .navigationBar{
+        background-color:darkslategray;
+    }
+}
+/*----------------------Wide or Big Screens-------------------*/
+@media only screen and (min-width:1025px){
+    article{
+        background-image:radial-gradient(white, black, whitesmoke);
+    }
 }
